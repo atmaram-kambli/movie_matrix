@@ -1,0 +1,82 @@
+@import "../../mixins.scss";
+.footer {
+    background-color: var(--black3);
+    padding: 50px 0;
+    color: white;
+    position: relative;
+    .contentWrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .menuItems {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 20px;
+        @include md {
+            margin-bottom: 30px;
+            gap: 30px;
+        }
+        .text-info {
+            font-weight: 600;
+            background-clip: text;
+            background: -webkit-linear-gradient(98.37deg, #f89e00 0.99%, #da2f68 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .menuItem {
+            transition: all ease 0.3s;
+            cursor: pointer;
+            font-size: 12px;
+            @include md {
+                font-size: 16px;
+            }
+            &:hover {
+                color: var(--pink);
+            }
+        }
+    }
+    .infoText {
+        font-size: 12px;
+        line-height: 20px;
+        opacity: 0.5;
+        text-align: center;
+        max-width: 800px;
+        margin-bottom: 20px;
+        @include md {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+    }
+    .linebreak {
+        height: 2px;
+        width: 96%;
+        max-width: 850px;
+        border: 2px solid #062148;
+        margin: auto;
+    }
+    
+    .rights {
+        // color: white;
+        opacity: 0.7;
+        padding: 10px 0px;
+        width: 90%;
+        max-width: 800px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        @include md {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
