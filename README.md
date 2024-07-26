@@ -17,3 +17,5 @@ Movie-Matrix is a web application developed using the MERN stack (MongoDB, Expre
 - **Database**: MongoDB
 - **API**: Integration with The Movie Database (TMDb) API
 
+## Live Project
+- Live Project Link: https://movie-matrix-one.vercel.app/
